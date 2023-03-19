@@ -1,0 +1,100 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi GakxAI", "How are you GakxAI", "Is anyone there?", "Hello GakxAI", "Good day GakxAI", "Arwaaah GakxAI"],
+         "responses": ["Hello, thanks for visiting", "Good to see you again", "Hi there, how can I help?"],
+         "context_set": ""
+        },
+        {"tag": "asking",
+         "patterns": ["how are you doing", "how are you", "how you doing", "cv", "how is your day"],
+         "responses": ["Am doing good and you", "Am fine, you", "great what about you"],
+         "context_set": ""
+        },
+        {"tag": "great",
+         "patterns": ["am good too thank you", "am fine thane you", "I doing good", "fine"],
+         "responses": ["thats great", "great", "oh, great"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye","saha"],
+         "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
+        },
+        {"tag": "Studying sunday",
+         "patterns": ["what we have on sunday", "what we going to study on sunday", "Sunday"],
+         "responses": ["you have AAV at 9h30, OCO at 11h"]
+        },
+        {"tag": "Studying Monday",
+         "patterns": ["what we have on monday", "what we going to study on monday", "Monday"],
+         "responses": ["you have AAV at 8h, productique at 11h, TP rpi at 13:30"]
+        },
+        {"tag": "Studying tuesday",
+         "patterns": ["what we have on tuesday", "what we going to study on tuesday", "tuesday"],
+         "responses": ["OCO at 11h"]
+        },
+        {"tag": "Studying wednesday",
+         "patterns": ["what we have on wednesday", "what we going to study on wednesday", "wednesday"],
+         "responses": ["you have Informatique Industrial All day"]
+        },
+        {"tag": "Studying thursday",
+         "patterns": ["what we have on thursday", "what we going to study on thursday", "thursday"],
+         "responses": ["you have productique at 9h30, rpi at 11h"]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"]
+        },
+        {"tag": "hours",
+         "patterns": ["What hours we finish tomorrow", "which hours end the day tommorow"],
+         "responses": ["you finish at 16h", "you finish at 11h"]
+        },
+        {"tag": "hoursmorning",
+         "patterns": ["What hours we start tomorrow", "which hours start the day tommorow"],
+         "responses": ["you start at 10h", "your day begin at 8h"]
+        },
+        {"tag": "deadline",
+         "patterns": ["Have I any deadline near","deadlines","what work do I have","what have I right now" ],
+         "responses": ["you have: (TP2 AAV : deadline tommorow), (DM info : deadline today ath 20:00h)", "no you have nothing to do, enjoy"]
+        },
+        {"tag": "TP",
+         "patterns": ["TP1 AAV deadline", "when TP1 AAV deadlin", "automatique avancé TP1 " ],
+         "responses": ["first january, you still have time", "tomorrow you have to finish it as soon as possible"]
+        },
+        {"tag": "TP2",
+         "patterns": ["when TP1 rpi deadline","TP1 rpi","TP1 regulation","when TP1 regulation" ],
+         "responses": ["first january, you still have time", "tomorrow you have to finish it as soon as possible"]
+        },
+        {"tag": "interro productique",
+         "patterns": ["when I have productique test", "when test productique?", "when we do have a productique?"],
+         "responses": ["Hard question, but sure you will have more than three"]
+        },
+        {"tag": "interro OCO",
+         "patterns": ["when I have OCO test", "when test OCO?", "when we do have a productique?"],
+         "responses": ["next tuesday","tuesday 12/12/2022"]
+        },
+        {"tag": "Module",
+         "patterns": ["where can I study Backstepping", "help me on Forwarding"],
+         "responses": ["check the book of KHALIL","you can check this youtube channel: NON-LINEAR systrem controll","check the dreive: S5 auto"]
+        },
+        {"tag": "homework",
+         "patterns": ["have I any homework for tomorrow", "tomorrow homework"],
+         "responses": ["You have OCO homework: exo3 from TD1","exo3 TD1 oco","Yes, you have exo3 from TD1 oco, you should finish it by night"]
+        },
+        {"tag": "help",
+         "patterns": ["GakxAI I need help", "help me", "help"],
+         "responses": ["How can I help you","with pleasure, what can I do for you"]
+        },
+        {"tag": "motivation",
+         "patterns": ["I can't study", "I need motivation", "I hate studying","I cant study under pressure"],
+         "responses": ["watch this reel u will be happy","lets play a game after go to study","listen to this new music, it will help you am sure"]
+        },
+        {"tag": "rental",
+         "patterns": ["Can we rent a moped?", "I'd like to rent a moped", "How does this work?" ],
+         "responses": ["Are you looking to rent today or later this week?"],
+         "context_set": "rentalday"
+        },
+        {"tag": "today",
+         "patterns": ["today"],
+         "responses": ["you have nothing for today, you can enjot", "you have a productique project"],
+         "context_filter": "rentalday"
+        }
+   ]
+}
